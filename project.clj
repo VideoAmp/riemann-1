@@ -45,7 +45,7 @@
     [clj-nsca "0.0.3"]
     [amazonica "0.3.28" :exclusions [joda-time]]
     [capacitor "0.4.3" :exclusions [http-kit]]
-    [spootnik/riemann-kafka "0.1.2-vamp"]
+    [spootnik/riemann-kafka "0.1.2.1-vamp"]
     [clj-json "0.5.3"]]
   :plugins [[codox "0.6.1"]
             [lein-rpm "0.0.5"
