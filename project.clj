@@ -44,7 +44,9 @@
     [clj-campfire "2.2.0"]
     [clj-nsca "0.0.3"]
     [amazonica "0.3.28" :exclusions [joda-time]]
-    [capacitor "0.4.3" :exclusions [http-kit]]]
+    [capacitor "0.4.3" :exclusions [http-kit]]
+    [spootnik/riemann-kafka "0.1.2-vamp"]
+    [clj-json "0.5.3"]]
   :plugins [[codox "0.6.1"]
             [lein-rpm "0.0.5"
              :exclusions [org.apache.maven/maven-plugin-api
@@ -98,4 +100,8 @@
           :src-dir-uri "http://github.com/aphyr/riemann/blob/master/"
           :src-linenum-anchor-prefix "L"
           :defaults {:doc/format :markdown}}
+  :repositories [["snapshots" {:url "https://videoamp.artifactoryonline.com/videoamp/snapshot"
+                               :sign-releases false :creds :gpg}]
+                 ["releases" {:url "https://videoamp.artifactoryonline.com/videoamp/release"
+                              :sign-releases false :creds :gpg}]]
 )
