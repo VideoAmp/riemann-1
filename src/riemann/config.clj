@@ -51,6 +51,7 @@
         [riemann.twilio :only [twilio]]
         [riemann.boundary :only [boundary]]
         [riemann.pushover :only [pushover]]
+        [riemann.victorops :only [victorops]]
         riemann.streams))
 
 (def core "The currently running core."
